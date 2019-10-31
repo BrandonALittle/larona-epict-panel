@@ -33,8 +33,11 @@ export class EpictCtrl extends MetricsPanelCtrl {
   }
 
   render(){
-	
-	this.processedBgURL=this.templateSrv.replace(this.panel.bgURL, this.panel.scopedVars);
+    
+	console.log(this.panel.bgURL)
+  this.processedBgURL=this.templateSrv.replace(this.panel.bgURL, this.panel.scopedVars);
+  console.log(this.processedBgURL)
+
 	var self=this;
 	var numberOfBoxes=this.scope.ctrl.panel.boxes.length;
 	for(var i=0; i<numberOfBoxes;i++){
